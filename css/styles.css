@@ -4,6 +4,7 @@
     --main-font: 'Roboto', sans-serif;
     --background-color: #FFFFFF;
     --accent-color: #2196f3;
+    --border-color: #EEEEEE;
 }
 
 body {
@@ -79,12 +80,10 @@ a:focus {
 
 .main {
     background-color: #2F303A;
-    width: 1600px;
     height: 600px;
     top: 80px;
-    margin-left: 215px;
+    margin: auto;
     padding: 200px 452px 280px 452px;
-    text-align: center;
 }
 
 .title {
@@ -95,6 +94,7 @@ a:focus {
     font-size: 44px;
     color: #FFFFFF;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .lorem_listitem_list{
@@ -129,6 +129,7 @@ a:focus {
     line-height: 1.18em;
     letter-spacing: 0.03em;
     text-align: center;
+    padding-top: 30px;
 }
 
 .section_crewmember_desctription {
@@ -138,6 +139,8 @@ a:focus {
     letter-spacing: 0.03em;
     color:#757575;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .section_item {
@@ -155,8 +158,13 @@ a:focus {
     color:#757575;
 }
 
+ul.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
 .button {
-    display: block;
     font-family: var(--main-font);
     cursor: pointer;
     border-radius: 4px;
@@ -272,6 +280,13 @@ ul.photos_index_list {
     justify-content: space-between;
 }
 
+ul.photos_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 1200px;
+}
+
 section.photos_portfolio>h3 {
     font-size: 18px;
     letter-spacing: 0.06em;
@@ -364,4 +379,19 @@ li.address-link {
 
 li.address-link:last-child {
     padding-bottom: 0px;
+}
+
+li.photo_grid {
+    border: 1px solid var(--border-color)
+}
+
+.section_item {
+    padding-left: 24px;
+    padding-right: 24px; 
+    padding-top: 20px;
+}
+
+.section_item_class {
+    padding-left: 24px;
+    padding-top: 4px;
 }
